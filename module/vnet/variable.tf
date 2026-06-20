@@ -18,3 +18,9 @@ variable "resource_group_name" {
   type        = string
   default     = "rg-module"
 }
+locals {
+  tag = {
+    project     = "terraform-azure"
+    environment = "prod"
+  }
+}
